@@ -1,0 +1,47 @@
+node_modules
+*.log
+*.zip
+.nuxt
+nuxt.d.ts
+.output
+dist
+.env
+.data
+*Zone.Identifier
+.eslintcache
+
+node_modules
+.data
+.nuxt
+.output
+dist
+node-compile-cache
+.npmignore
+.npmrc
+
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+node-compile-cache
+
+#
+*lock.yaml
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+.pnpm-store
+

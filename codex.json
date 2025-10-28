@@ -1,0 +1,12 @@
+{
+  "project": "BoilerPlate",
+  "version": "1.0.0",
+  "author": "CodeHaven42",
+  "context": [
+    "codex/00_project_overview.md",
+    "codex/01_architecture.md",
+    "codex/02_conventions.md",
+    "codex/03_tasks.md",
+    "codex/04_data_base_conventions.md"
+  ]
+}

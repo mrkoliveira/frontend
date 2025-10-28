@@ -1,0 +1,3 @@
+## coisas a fazer
+
+[ ] voltar nas paginas sem auth para colocar a lingua...

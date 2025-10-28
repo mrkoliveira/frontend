@@ -1,0 +1,87 @@
+config:
+  pageTitle: Boilerplate
+  terms: Termos e Serviços
+  infoCopy: Copyright - Todos os Direitos Reservados
+  infoCopy2: 'Feito com 🤎 Por: Boilerplate'
+panels:
+  language:
+    title: Selecionar idioma
+components:
+  toolbar:
+    search: Buscar...
+    actions:
+      leads: Contatos
+      projects: Projetos
+      team: Equipe
+      reports: Relatórios
+      settings: Configurações
+  others:
+    waiting: Aguarde
+    processing: Processando
+    working: Trabalhando
+    loading: Carregando...
+page:
+  title:
+    signin: Entrar
+    signup: Cadastrar
+    recover: Recuperar Senha
+form:
+  confirmPassword: Confirmar Senha
+  labelName: Nome Completo
+  labelEmail: E-Mail
+  labelEmail2: Seu Melhor E-Mail
+  labelPassword: Senha
+  err:
+    invalidJson: Parâmetros informados errados!
+    existUser: Já existe um usuário cadastrado com este e-mail
+    agree: Você precisa aceitar os termos
+    emailRequired: Por favor, infome seu e-mail corretamente
+    userNameMin: Nome deve ter no mímino 3 caracteres
+    userNameMax: Nome deve ter no maximo 250 caracteres
+    passwdMin: A senha deve ter no mímio 8 caracteres
+    passwdMax: A senha deve ter no máximo 25 caracteres
+    passwdEmail: A senha não pode ser seu e-mail
+    passwdMissMath: As senhas não coincidem
+    passwdE1: A senha deve conter pelo menos uma letra minúscula
+    passwdE2: A senha deve conter pelo menos uma letra maiúscula
+    passwdE3: A senha deve conter pelo menos um número
+    passwdE4: A senha deve conter pelo menos um caractere especial
+error:
+  title: Error 🤯
+  e000: Ops! 😵‍💫 parece que nossos sistemas não estão on-line... Tente novamente!
+  e001: Ops! 😵‍💫 parece que o a configuração do sistema não está correta!
+  400: Ops! 😵‍💫 Erro no formulário, tente novamente!
+success:
+  title: Oba! 😇
+  default: Operação realizada com Sucesso! 🙏
+  welcome: Obrigado por se juntar a nós, agora você já pode fazer seu Login
+  login: Bem vindo, novamente! Estamos te redirecionando!
+btn:
+  createCount: Criar Conta
+  accessTo: Acessar aqui
+  recoverPwd: Recuperar Senha
+  back: Voltar
+  letIn: Entrar - Logar
+lang:
+  1: Sua jornada começa agora! Por favor, preencha o formulário
+  2: Já tem uma conta conosco?
+  3: Não perca tempo nesta página, vamos levá-lo de volta à sua conta 👍🏻
+  4: 'Ao me cadastrar, declaro que li e concordo tacidamente com os: Termos de Uso, a Política de Privacidade, o Contrato de Prestação de Serviços e o tratamento de dados conforme a LGPD.'
+  5: Termos de Uso
+  6: Política de Privacidade e LGPD
+  7: Contrato de Prestação de Serviços
+  8: Por favor, infome seu email cadatrado para enviarmos as instruções
+  9: Se tudo estiver correto, você receberá um email, contendo as informações.
+  10: '** Não esqueça de verificar sua a pasta Spam. E já aproveite para autorizar nossos emails!'
+  11: '** Não esqueça de verificar sua a pasta Spam.'
+  12: Olá, novamente! 🙏
+  13: Confiar por 60 dias
+  14: Esqueceu sua Senha?
+  15: Ainda não tem uma conta?
+  16: Cadastre-se Agora!
+  17: Ao Entrar você concorda integralmente, com nossos termos e serviços.
+
+test:
+  1: WebSocket conectado com sucesso
+none: ''
+Required: Obrigatório
