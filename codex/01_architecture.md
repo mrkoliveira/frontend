@@ -9,7 +9,7 @@
 O sistema segue uma **arquitetura em camadas** dividida em quatro partes principais:
 
 1. **Frontend (Nuxt 4)** — Interface e experiência do usuário.
-2. **Backend (Windmill)** — Processamento de lógica e APIs.
+2. **Backend (Node + Fastify)** — Processamento de lógica e APIs.
 3. **Banco de Dados (PostgreSQL)** — Persistência de dados.
 4. **Automação (n8n)** — Fluxos automáticos e tarefas assíncronas.
 
@@ -19,7 +19,7 @@ Cada camada é independente, mas se comunica de forma padronizada através de AP
 
 ## 2. Fluxo de Dados
 
-1. O usuário interage com a interface do **Nuxt 4**, que envia requisições para o **Backend (Windmill)** através da função central `api_request()`.
+1. O usuário interage com a interface do **Nuxt 4**, que envia requisições para o **Backend (Node + Fastify)** através da função central `api_request()`.
 2. O backend processa as solicitações, acessa o **PostgreSQL** diretamente via SQL e retorna respostas padronizadas (status, data, message).
 3. Para tarefas assíncronas (envio de emails, relatórios, billing), o backend aciona **workflows no n8n** via webhooks.
 4. O **n8n** executa as automações necessárias e, se aplicável, retorna dados ao backend.
@@ -50,7 +50,7 @@ Cada camada é independente, mas se comunica de forma padronizada através de AP
 ## 4. Estrutura de Dependências
 
 - O **Frontend** depende do **Backend** para todas as operações de dados.
-- O **Backend** depende do **Banco de Dados** e do **n8n** para persistência e automação.
+- O **Backend** depende do **Banco de Dados** e do **n8n** para automação se tiver automação.
 - O **n8n** funciona de forma independente, mas recebe dados do **Backend**.
 
 Essa estrutura garante baixo acoplamento e alta coesão, facilitando manutenção e escalabilidade.
@@ -67,7 +67,7 @@ Essa estrutura garante baixo acoplamento e alta coesão, facilitando manutençã
 
 ## 6. Integrações Externas
 
-- **Windmill:** executa scripts e funções backend com segurança.
+- **Node + Fastify:** executa scripts e funções backend com segurança.
 - **n8n:** gerencia automações, notificações e integrações de terceiros.
 - **Serviços de Pagamento:** integração modular (Stripe, PayPal, etc.) futura.
 
@@ -80,7 +80,7 @@ Essa estrutura garante baixo acoplamento e alta coesão, facilitando manutençã
           ↓
 [ API Central (services/api.ts) ]
           ↓
-[ Windmill (Backend) ]
+[ Node + Fastify (Backend) ]
           ↓
 [ PostgreSQL (Banco de Dados) ]
           ↕

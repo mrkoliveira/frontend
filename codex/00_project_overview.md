@@ -18,7 +18,7 @@
 **Stack:**
 
 - Frontend: Nuxt 4 + TailwindCSS 3 + DaisyUI 5
-- Backend: Windmill ([https://www.windmill.dev/](https://www.windmill.dev/))
+- Backend: NodeJs + Fastify
 - Database: PostgreSQL 18
 - Automation: n8n
 

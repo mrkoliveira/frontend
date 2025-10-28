@@ -15,10 +15,12 @@
 - Stores devem ficar em `/app/stores/` e organizadas por feature (ex: `/app/stores/users/`, `/app/stores/payments/`) usando Pinia para gerenciamento de estado.
 - Serviços ou integrações externas em `/app/services/`, com convenções claras para chamadas de API, tratamento de erros e timeouts.
 - Configurações globais em `/app/config/`.
+- Funções em `/functions/`.
+- Organize pasta de functions por feature, não por tipo de arquivo (ex: `users/`, `payments/`).
 - Middleware e plugins devem ficar em `/app/middleware/` ou `/app/plugins/` e organizados por feature quando aplicável.
 - Assets e arquivos estáticos devem ficar em `/public/assets/` ou `public/`, organizados por tipo ou feature.
 - Variáveis de ambiente devem ser armazenadas em `.env` ou `.env.local`, nunca hardcoded.
-- Internacionalização (i18n) deve ficar em `/app/i18n/`, suportando pt-BR e en, com arquivos organizados por idioma. As chaves devem ser idênticas entre os idiomas, alterando apenas os valores das traduções.
+- Internacionalização (i18n) deve ficar em `/i18n/`, suportando pt-BR e en, com arquivos organizados por idioma. As chaves devem ser idênticas entre os idiomas, alterando apenas os valores das traduções.
 - Cache / Storage: usar `localStorage` para armazenar dados persistentes quando aplicável, seguindo convenções de chave únicas por feature.
 - Internacionalização avançada: seguir regras sobre chaves de tradução, fallback de idioma e formatação de datas e números.
 
@@ -43,7 +45,7 @@
   - `event: <tipo_do_evento>`
   - `data: { ...conteúdo... }`
 
-- A conexão SSE deve ser inicializada apenas uma vez (por exemplo, em `plugins/sse.client.ts`) e repassar as mensagens via Pinia ou composables.
+- A conexão SSE deve ser inicializada apenas uma vez (por exemplo, em `app/plugins/sse.client.ts`) e repassar as mensagens via Pinia ou composables.
 - O frontend **não envia dados** por SSE — a comunicação é unidirecional.
 
 ### **Padronização de Mensagens (i18n)**
